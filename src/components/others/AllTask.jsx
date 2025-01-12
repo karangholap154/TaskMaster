@@ -9,7 +9,7 @@ const AllTask = () => {
     
     return (
         <div className='bg-[#1c1c1c] p-5 mt-5 mb-5 rounded'>
-            <div className='bg-red-400 mb-2 py-2 px-4 flex justify-between rounded'>
+            <div className='bg-red-400 mb-2 py-2 px-4 text-center flex justify-between rounded'>
                 <h2 className='text-lg font-medium w-1/5 '>Employee Name</h2>
                 <h3 className='text-lg font-medium w-1/5 '>New Task</h3>
                 <h5 className='text-lg font-medium w-1/5 '>Active</h5>
@@ -20,7 +20,7 @@ const AllTask = () => {
             <div className=''>
             {userData.map(function(elem, idx) {
                 return (
-                    <div key={idx} className='border-2 border-emerald-500 mb-2 py-2 px-4 flex justify-between rounded'>
+                    <div key={idx} className='border-2 border-emerald-500 mb-2 py-2 px-4 flex text-center justify-between rounded'>
                         <h2 className='text-lg font-medium w-1/5'>{elem.firstname}</h2>
                         <h3 className='text-lg font-medium w-1/5 text-blue-400'>{elem.taskCounts.newTask}</h3>
                         <h5 className='text-lg font-medium w-1/5 text-yellow-400'>{elem.taskCounts.active}</h5>
